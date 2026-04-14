@@ -8,170 +8,179 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-:root {
-    --bg: #f5efe6;
-    --text: #2e2a27;
-    --muted: #7b746d;
-    --accent: #9b6b43;
-    --card: #ffffff;
-    --border: #e7dccf;
+:root{
+    --bg:#f4ede4;
+    --text:#2b2622;
+    --muted:#7a736c;
+    --accent:#a06a45;
+    --card:#ffffff;
+    --border:#e8ddd2;
 }
 
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: var(--bg);
-    color: var(--text);
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
 }
 
 /* NAV */
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 60px;
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:25px 70px;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--text);
-    margin-left: 30px;
-    font-size: 14px;
-    letter-spacing: 1px;
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    margin-left:35px;
+    font-size:13px;
+    letter-spacing:1px;
+    transition:0.2s;
 }
 
-nav a:hover {
-    color: var(--accent);
+nav a:hover{
+    color:var(--accent);
 }
 
 /* HERO */
-.hero {
-    text-align: center;
-    padding: 150px 20px 100px;
+.hero{
+    text-align:center;
+    padding:160px 20px 110px;
 }
 
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 80px;
-    margin: 0;
-    font-weight: 400;
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:86px;
+    font-weight:400;
+    margin:0;
 }
 
-.hero p {
-    color: var(--muted);
-    font-size: 18px;
-    margin-top: 15px;
+.hero p{
+    margin-top:15px;
+    color:var(--muted);
+    font-size:18px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 28px;
-    border: 1px solid var(--border);
-    text-decoration: none;
-    color: var(--text);
-    transition: 0.3s;
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:13px 30px;
+    border:1px solid var(--border);
+    text-decoration:none;
+    color:var(--text);
+    transition:0.3s;
 }
 
-.btn:hover {
-    background: var(--accent);
-    color: white;
+.btn:hover{
+    background:var(--accent);
+    color:white;
+    border-color:var(--accent);
 }
 
 /* SECTIONS */
-section {
-    padding: 100px 60px;
+section{
+    padding:100px 70px;
 }
 
-h2 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 42px;
-    font-weight: 400;
-    margin-bottom: 50px;
+h2{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:44px;
+    font-weight:400;
+    margin-bottom:55px;
 }
 
 /* GALLERY */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
 }
 
-.card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    transition: 0.3s;
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    overflow:hidden;
+    transition:0.25s;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 18px 40px rgba(0,0,0,0.08);
 }
 
-.card img {
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
 }
 
-.card h3 {
-    font-family: 'Playfair Display', serif;
-    margin: 12px 15px 5px;
+.card h3{
+    font-family:'Playfair Display',serif;
+    margin:12px 14px 4px;
+    font-size:20px;
 }
 
-.card p {
-    margin: 0 15px 15px;
-    color: var(--muted);
+.card p{
+    margin:0 14px 14px;
+    color:var(--muted);
 }
 
 /* ABOUT */
-.about {
-    max-width: 700px;
-    margin: auto;
-    text-align: center;
-    line-height: 1.8;
-    color: var(--muted);
+.about{
+    max-width:720px;
+    margin:auto;
+    text-align:center;
+    color:var(--muted);
+    line-height:1.9;
+    font-size:18px;
 }
 
 /* CONTACT */
-.contact {
-    text-align: center;
+.contact{
+    text-align:center;
 }
 
-.contact a {
-    display: block;
-    margin-top: 10px;
-    color: var(--text);
-    text-decoration: none;
+.contact a{
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    color:var(--text);
 }
 
-.contact a:hover {
-    color: var(--accent);
+.contact a:hover{
+    color:var(--accent);
 }
 
 /* FOOTER */
-footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 60px;
-    color: var(--muted);
-    font-size: 13px;
-    border-top: 1px solid var(--border);
+footer{
+    display:flex;
+    justify-content:space-between;
+    padding:40px 70px;
+    border-top:1px solid var(--border);
+    color:var(--muted);
+    font-size:13px;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-    .gallery {
-        grid-template-columns: 1fr;
+/* RESPONSIVE */
+@media(max-width:900px){
+    .gallery{
+        grid-template-columns:1fr;
     }
 
-    .hero h1 {
-        font-size: 50px;
+    .hero h1{
+        font-size:52px;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
+    nav{
+        flex-direction:column;
+        gap:10px;
     }
 }
 </style>
@@ -191,12 +200,12 @@ footer {
 
 <section id="home" class="hero">
     <h1>Sketchora Studio</h1>
-    <p>Soft art. Quiet stories. Earthy memories.</p>
-    <a class="btn" href="#collection">View Collection</a>
+    <p>Earthy tones. Quiet emotion. Minimal stories.</p>
+    <a href="#collection" class="btn">Explore Work</a>
 </section>
 
 <section id="collection">
-    <h2>Selected Works</h2>
+    <h2>Selected Pieces</h2>
 
     <div class="gallery">
 
@@ -222,9 +231,10 @@ footer {
 </section>
 
 <section id="about">
-    <h2>About</h2>
+    <h2>The Studio</h2>
     <div class="about">
-        Sketchora Studio creates calm, earthy visuals inspired by light, texture, and emotion.
+        Sketchora Studio is built on calm visuals and earthy tones.
+        Every piece is designed to feel soft, intentional, and quietly emotional.
     </div>
 </section>
 
@@ -232,13 +242,13 @@ footer {
     <h2>Contact</h2>
     <div class="contact">
         <a href="#">Instagram: @sketchora.studio</a>
-        <a href="mailto:2012aadyaagarwal@gmail.com">Email Us</a>
+        <a href="mailto:2012aadyaagarwal@gmail.com">Email</a>
     </div>
 </section>
 
 <footer>
     <div>Sketchora Studio</div>
-    <div>© 2026</div>
+    <div>© 2026 All rights reserved</div>
 </footer>
 
 </body>
